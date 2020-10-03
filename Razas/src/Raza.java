@@ -5,7 +5,8 @@ public abstract class Raza {
 	protected int dañoBasico;
 	protected String arma;
 	protected int rango;
-	int veneno=0;
+	int efecto=0;
+	boolean estado=false;
 	
 	
 	

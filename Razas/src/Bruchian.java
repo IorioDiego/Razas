@@ -12,13 +12,13 @@ public class Bruchian extends Raza {
 	@Override
 	public void atacar(Raza raza) {
 		activarEfecto(raza);
-		if(this.veneno == 1)
+		if(this.estado)
 			salud-=3;
 	}
 
 	@Override
 	public void recibirataque(Raza raza) {
-		if(this.veneno == 1)
+		if(this.estado )
 			salud-=3;	
 	}
 
@@ -30,13 +30,13 @@ public class Bruchian extends Raza {
 		else
 			salud+=saludRecu;
 		
-		if(this.veneno == 1)
+		if(this.estado)
 			salud-=3;
 	}
 
 	@Override
 	public void activarEfecto(Raza raza) {
-		raza.veneno=1;
+		raza.estado=true;
 	}
 	
 
