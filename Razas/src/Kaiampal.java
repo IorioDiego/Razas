@@ -3,6 +3,7 @@ public class Kaiampal extends Raza {
 
 	
 	
+	
 	@Override
 	public void atacar() {
 		// TODO Auto-generated method stub
@@ -10,7 +11,7 @@ public class Kaiampal extends Raza {
 	}
 
 	@Override
-	public void recibiratque() {
+	public void recibirataque() {
 		// TODO Auto-generated method stub
 		
 	}

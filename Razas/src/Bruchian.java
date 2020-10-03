@@ -6,17 +6,20 @@ public class Bruchian extends Raza {
 		this.rango=15;
 		this.dañoBasico= 124;
 		this.arma = "Manos";
+		
 	}
 
 	@Override
 	public void atacar(Raza raza) {
-		
+		activarEfecto(raza);
+		if(this.veneno == 1)
+			salud-=3;
 	}
 
 	@Override
-	public void recibiratque(Raza raza) {
-		// TODO Auto-generated method stub
-		
+	public void recibirataque(Raza raza) {
+		if(this.veneno == 1)
+			salud-=3;	
 	}
 
 	@Override
@@ -26,8 +29,16 @@ public class Bruchian extends Raza {
 			salud=180;
 		else
 			salud+=saludRecu;
+		
+		if(this.veneno == 1)
+			salud-=3;
+	}
+
+	@Override
+	public void activarEfecto(Raza raza) {
+		raza.veneno=1;
 	}
 	
-	
+
 
 }

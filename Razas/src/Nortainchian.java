@@ -15,7 +15,7 @@ public class Nortainchian extends Raza {
 	}
 
 	@Override
-	public void recibiratque(Raza raza) {
+	public void recibirataque(Raza raza) {
 		// TODO Auto-generated method stub
 		
 	}
